@@ -14,28 +14,20 @@ const Home: NextPage = () => {
       <div className="flex items-center flex-col flex-grow pt-10">
         <div className="px-5">
           <h1 className="text-center">
-            <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH 2</span>
+            <span className="block text-2xl mb-2">欢迎来到</span>
+            <span className="block text-4xl font-bold">农产品溯源系统</span>
           </h1>
           <div className="flex justify-center items-center space-x-2">
-            <p className="my-2 font-medium">Connected Address:</p>
+            <p className="my-2 font-medium">用户地址：</p>
             <Address address={connectedAddress} />
           </div>
+          <p className="text-center text-lg">一个基于智能合约和以太坊技术栈的去中心化App</p>
           <p className="text-center text-lg">
-            Get started by editing{" "}
+            您当前在{" "}
             <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/nextjs/app/page.tsx
-            </code>
-          </p>
-          <p className="text-center text-lg">
-            Edit your smart contract{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              YourContract.sol
+              Administrator
             </code>{" "}
-            in{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/hardhat/contracts
-            </code>
+            账户下
           </p>
         </div>
 
@@ -44,21 +36,21 @@ const Home: NextPage = () => {
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <BugAntIcon className="h-8 w-8 fill-secondary" />
               <p>
-                Tinker with your smart contract using the{" "}
+                使用{" "}
                 <Link href="/debug" passHref className="link">
                   Debug Contracts
                 </Link>{" "}
-                tab.
+                修改智能合约。
               </p>
             </div>
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <MagnifyingGlassIcon className="h-8 w-8 fill-secondary" />
               <p>
-                Explore your local transactions with the{" "}
+                使用{" "}
                 <Link href="/blockexplorer" passHref className="link">
                   Block Explorer
                 </Link>{" "}
-                tab.
+                查询本地交易。
               </p>
             </div>
           </div>

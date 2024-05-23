@@ -42,5 +42,8 @@
   },
   "engines": {
     "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "ipfs-http-client": "^60.0.1"
   }
 }
